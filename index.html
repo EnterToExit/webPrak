@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MS Portfolio</title>
+    <style>
+      #slider {
+        overflow: hidden;
+      }
+
+      #slider figure {
+        position: relative;
+        width: 400%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+      }
+    </style>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="home">
+        <div class="blockHome">
+          <h1>Welcome To My Site</h1>
+          <p class="lead">Below there is some information about me</p>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="blockAboutLeft">
+          <div>
+            <img
+              src="https://avatars.mds.yandex.net/get-altay/4465779/2a00000178da7677fc37d17fe28b1dd7f308/XXL"
+              width="860"
+              height="600"
+            />
+          </div>
+        </div>
+        <div class="blockAboutRight">
+          <h1>About Me</h1>
+          <p class="aboutText">
+            Hello everyone, my name is Maxim and I am studying in Moscow
+            Technical University of Communications and Informatics. I love
+            learning new things and putting them into practice. Learning
+            programming languages: C++, Java, Python, etc. Also i work in
+            Blender, Photoshop and Premiere Pro.
+          </p>
+        </div>
+      </section>
+
+      <section id="service">
+        <div class="serviceMain">
+          <div class="blockService">
+            <h1>Service</h1>
+            <p class="serviceText">
+              If you need someone who can edit a photo or video. To write a
+              simple code or a simple Windows Form program, 3D model, you can
+              <a href="#contact" style="color: white">contact me</a>. Here are
+              examples of my work:
+            </p>
+          </div>
+
+          <div class="slider">
+            <div class="slider-line">
+              <img
+                src="https://cdn.discordapp.com/attachments/862647458307506176/862768154862551050/slider1.jpg"
+                alt=""
+              />
+              <img
+                src="https://cdn.discordapp.com/attachments/862647458307506176/862768158820925520/slider2.jpg"
+                alt=""
+              />
+              <img
+                src="https://cdn.discordapp.com/attachments/862647458307506176/862768162860171294/slider3.jpg"
+                alt=""
+              />
+              <img
+                src="https://cdn.discordapp.com/attachments/862647458307506176/862768168576483348/slider4.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <button class="btnPrev" style="color: white"><<</button>
+          <button class="btnNext" style="color: white">>></button>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="blockContact">
+          <h1>Contact</h1>
+          <p class="contactText">
+            If you have any questions:
+            <br />
+            vk.com/43stairway <br />
+            osmiumsdk@gmail.com
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

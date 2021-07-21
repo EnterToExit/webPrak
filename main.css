@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.blockHome {
+  position: relative;
+  text-align: right;
+  right: 400px;
+}
+
+.blockAboutLeft {
+  position: relative;
+  right: 450px;
+  top: 200px;
+}
+
+.blockAboutRight {
+  max-width: 600px;
+  text-align: left;
+  position: relative;
+  left: 380px;
+  bottom: 300px;
+}
+
+.serviceMain {
+  position: relative;
+  top: 60px;
+}
+
+.blockService {
+  max-width: 1200px;
+  text-align: left;
+  position: relative;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.blockContact {
+  max-width: 600px;
+  text-align: left;
+  position: relative;
+  right: 400px;
+  bottom: 0px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.aboutText {
+  font-size: 1.5rem;
+}
+
+.serviceText {
+  font-size: 1.5rem;
+}
+
+.contactText {
+  font-size: 1.5rem;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+/* Section Images */
+section#home {
+  background: url("https://cdn.discordapp.com/attachments/862647458307506176/863002323781550130/png1.png")
+    no-repeat center center/cover;
+}
+
+section#about {
+  background: url("https://cdn.discordapp.com/attachments/862647458307506176/863002325639757874/2.png")
+    no-repeat center center/cover;
+}
+
+section#service {
+  background: url("https://cdn.discordapp.com/attachments/862647458307506176/863002328542216212/3.png")
+    no-repeat center center/cover;
+}
+
+section#contact {
+  background: url("https://cdn.discordapp.com/attachments/862647458307506176/863002321427234816/4.png")
+    no-repeat center center/cover;
+}
+
+.slider {
+  width: 720px;
+  height: 480px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider-line {
+  width: 2880px;
+  height: 480px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.btnNext {
+  font-family: "Encode Sans SC", sans-serif;
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 1.4rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnPrev {
+  font-family: "Encode Sans SC", sans-serif;
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 1.4rem;
+  cursor: pointer;
+  outline: none;
+}
